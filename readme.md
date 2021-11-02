@@ -1,34 +1,34 @@
-# Test
+# < test >
 
 ## Table of Contents 
-* ** - [Description] (#description)**
-* **- [Installation] (#installation)**
-* **- [Usage] (#usage)**
-* **- [Contributions] (#contributions)**
-* **- [Tests] (#tests)**
-* **- [Questions] (#questions)**
-* **- [License] (#license)**
+- [Description] (#description)
+- [Installation] (#installation)
+- [Usage] (#usage)
+- [Contributions] (#contributions)
+- [Tests] (#tests)
+- [Questions] (#questions)
+- [License] (#license)
 
 ### Description
-Test
+test
 
-###Installation
+### Installation
 undefined
 
 ### Usage 
-Test
+test
 
 ### License
-Test
+GNU General Public License v3.0
 
 ### Contrubutions
-Test
+test
 
 ### Test 
-Test
+test
 
-# Questions 
+### Questions 
 
-If you have any questions please contact me either (https://github.com/Test) or via email at Test 
+If you have any questions please contact me either (https://github.com/test) or via email at test 
 
 Have a great day! 

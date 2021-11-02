@@ -41,7 +41,7 @@ const promptUser = () => {
             message: "Are there any instructions in regards to testing?"
         },
         {
-            type: "input",
+            type: "list",
             name: "license",
             message: 'Please select the licensing required for this application',
             choices: [
@@ -66,21 +66,21 @@ const promptUser = () => {
 
 const generateMarkdown = ({ title, description, install, usage, license, contributions, test, email, git }) =>
 
-    `# ${title}
+    `# < ${title} >
 
 ## Table of Contents 
-* ** - [Description] (#description)**
-* **- [Installation] (#installation)**
-* **- [Usage] (#usage)**
-* **- [Contributions] (#contributions)**
-* **- [Tests] (#tests)**
-* **- [Questions] (#questions)**
-* **- [License] (#license)**
+- [Description] (#description)
+- [Installation] (#installation)
+- [Usage] (#usage)
+- [Contributions] (#contributions)
+- [Tests] (#tests)
+- [Questions] (#questions)
+- [License] (#license)
 
 ### Description
 ${description}
 
-###Installation
+### Installation
 ${install}
 
 ### Usage 
@@ -95,7 +95,7 @@ ${contributions}
 ### Test 
 ${test}
 
-# Questions 
+### Questions 
 
 If you have any questions please contact me either (https://github.com/${git}) or via email at ${email} 
 
