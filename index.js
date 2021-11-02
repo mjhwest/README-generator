@@ -2,10 +2,14 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
+//gets the stored variable /methds from generateMarkdown due to module.export in its file 
+// const generateMarkdown = require("./utils/generateMarkdown.js");
+
 
 //Create an array of questions for user input
-//Question to include; 1) Title of the Project 2) Descripition of Project 3) Installation Steps 4) Usage Steps 5) License 6)Contibutors 7) Tests 8) Questions
-const questions = () => {
+
+const promptUser = () => {
+
     return inquirer.prompt([{
             type: 'input',
             name: 'title',
@@ -18,7 +22,7 @@ const questions = () => {
         },
         {
             type: 'input',
-            name: 'install',
+            name: 'installation',
             message: 'What are the steps required to install your project?'
         },
         {
@@ -27,35 +31,32 @@ const questions = () => {
             message: 'What are the steps required to use your project?'
         },
         {
-            type: "list",
+            type: "input",
+            name: "contributions",
+            message: "Are there any contribution guideliness that need to be followed?"
+        },
+        {
+            type: "input",
+            name: "test",
+            message: "Are there any instructions in regards to testing?"
+        },
+        {
+            type: "input",
             name: "license",
             message: 'Please select the licensing required for this application',
             choices: [
                 "Apache License 2.0",
                 "GNU General Public License v3.0",
                 "MIT License",
-                "Eclipse Public License 2.0",
-                "Mozilla Publice License 2.0",
-                "The Unlicense",
             ]
         },
         {
-            type: "list",
-            name: "contributions",
-            message: "Are there any contribution guideliness that need to be followed?"
-        },
-        {
-            type: "list",
-            name: "test",
-            message: "Are there any instructions in regards to testing?"
-        },
-        {
-            type: "list",
+            type: "input",
             name: "email",
             message: "Please enter your email"
         },
         {
-            type: "list",
+            type: "input",
             name: "git",
             message: "Please provide your GitHub Profile URL"
         },
@@ -63,25 +64,62 @@ const questions = () => {
 };
 
 
+const generateMarkdown = ({ title, description, install, usage, license, contributions, test, email, git }) =>
+
+    `# ${title}
+
+## Table of Contents 
+* ** - [Description] (#description)**
+* **- [Installation] (#installation)**
+* **- [Usage] (#usage)**
+* **- [Contributions] (#contributions)**
+* **- [Tests] (#tests)**
+* **- [Questions] (#questions)**
+* **- [License] (#license)**
+
+### Description
+${description}
+
+###Installation
+${install}
+
+### Usage 
+${usage}
+
+### License
+${license}
+
+### Contrubutions
+${contributions}
+
+### Test 
+${test}
+
+# Questions 
+
+If you have any questions please contact me either (https://github.com/${git}) or via email at ${email} 
+
+Have a great day! `;
 
 
+const init = () => {
+    promptUser()
 
-
+    .then((answers) => fs.writeFileSync('readme.md', generateMarkdown(answers)))
+        .then(() => console.log("Nice job, you successfully write the readme.md"))
+        .catch((err) => console.error(err))
+};
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
-
-
-
-
-
-
+// fs.writeToFile('readme.md', data, (err) =>
+//     err ? console.error(err) : console.log("Success! You made your ReadMe")
+// );
 
 
 
 //Line 65 to end of mini project:
 // TODO: Create a function to initialize app
-function init() {}
+
 
 // Function call to initialize app
 init();
