@@ -69,13 +69,13 @@ const generateMarkdown = ({ title, description, install, usage, license, contrib
     `# < ${title} >
 
 ## Table of Contents 
-- [Description] (#description)
-- [Installation] (#installation)
-- [Usage] (#usage)
-- [Contributions] (#contributions)
-- [Tests] (#tests)
-- [Questions] (#questions)
-- [License] (#license)
+- [Description] (#Description)
+- [Installation] (#Installation)
+- [Usage] (#Usage)
+- [Contributions] (#Contributions)
+- [Tests] (#Tests)
+- [Questions] (#Questions)
+- [License] (#License)
 
 ### Description
 ${description}
