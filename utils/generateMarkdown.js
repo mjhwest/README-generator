@@ -1,27 +1,66 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+function renderLicenseBadge(license) {
+    if (license !== 'None') {
+        return '';
+
+    } else if (license === "Apache License 2.0") {
+        return `![license: Apache License 2.0](https://img.shields.io/badge/license-Apache%20License%202.0-green)`;
+
+    } else if (license = "GNU General Public License v3.0") {
+        return `[license: GNU General Public License v3.0](https://img.shields.io/badge/license-GNU%20General%20Public%20License%20v3.0-red)`
+
+    } else if (license = "MIT") {
+        return `[license: MIT](https://img.shields.io/badge/license-MIT-blue)`
+    }
+
+}
+renderLicenseBadge()
+
+
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+    if (license !== 'None') {
+        return '';
+
+    } else if (license === "Apache License 2.0") {
+        return `(https://opensource.org/licenses/Apache-2.0)`;
+
+    } else if (license = "GNU General Public License v3.0") {
+        return `https://opensource.org/licenses/GPL-2.0`;
+
+    } else if (license = "MIT") {
+        return `https://opensource.org/licenses/MIT`;
+    }
+}
+renderLicenseLink()
+
+
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
 
+
+}
+renderLicenseSection()
+
+
+
+// so it has the function . . if . . and return . .  or return . . .
 //LICENSE HERE// //Need to includge badge here//
 
-let licensePick = "";
+// let licensePick = "";
 
-if (data.license = "Apache License 2.0") {
-    licensePick = "![LICENSE](https://img.shields.io/badge/LICENSE-Apache%20License%202.0-green)";
-} else if (data.license = "GNU General Public License v3.0") {
-    licensePick = "![LICENSE: GNU General Public License v3.0](https://img.shields.io/badge/LICENSE-GNU%20General%20Public%20License%20v3.0-red)"
-} else {
-    licensePick = "![LICENSE: MIT](https://img.shields.io/badge/LICENSE-MIT-blue)"
-};
-
+// if (data.license = "Apache License 2.0") {
+//     licensePick = "![LICENSE](https://img.shields.io/badge/LICENSE-Apache%20License%202.0-green)";
+// } else if (data.license = "GNU General Public License v3.0") {
+//     licensePick = "![LICENSE: GNU General Public License v3.0](https://img.shields.io/badge/LICENSE-GNU%20General%20Public%20License%20v3.0-red)"
+// } else {
+//     licensePick = "![LICENSE: MIT](https://img.shields.io/badge/LICENSE-MIT-blue)"
+// };
 
 
 
@@ -31,7 +70,8 @@ function generateMarkdown(data) {
     
     # ${data.title}
 
-    ${licensePick}
+
+
 
     ## Table of Contents 
     - [Description](#Description)
@@ -50,10 +90,7 @@ function generateMarkdown(data) {
     
     ### Usage 
     ${data.usage}
-    
-    ### License
-    ${data.license}
-    
+        
     ### Contributions
     ${data.contributions}
     

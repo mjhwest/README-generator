@@ -13,7 +13,7 @@ const promptUser = () => {
             message: "What is the title for this project?"
         },
         {
-            type: 'inpuit',
+            type: 'input',
             name: 'description',
             message: "Provide a description explaining your project"
         },
@@ -61,44 +61,6 @@ const promptUser = () => {
 };
 
 
-// const generateMarkdown = ({ title, description, install, usage, license, contributions, test, email, git }) =>
-
-// `# < ${title} >
-
-// ## Table of Contents 
-// - [Description](#Description)
-// - [Installation](#Installation)
-// - [Usage](#Usage)
-// - [Contributions](#Contributions)
-// - [Tests](#Tests)
-// - [Questions](#Questions)
-// - [License](#License)
-
-// ### Description
-// ${description}
-
-// ### Installation
-// ${install}
-
-// ### Usage 
-// ${usage}
-
-// ### License
-// ${license}
-
-// ### Contrubutions
-// ${contributions}
-
-// ### Test 
-// ${test}
-
-// ### Questions 
-
-// If you have any questions please contact me either (https://github.com/${git}) or via email at ${email} 
-
-// Have a great day! `;
-
-
 const init = () => {
     promptUser()
 
@@ -116,7 +78,9 @@ const init = () => {
 
 //Line 65 to end of mini project:
 // TODO: Create a function to initialize app
-
+// function init(writeFileSync) {
+//     fs.writeToFile()
+// }
 
 // Function call to initialize app
 init();
