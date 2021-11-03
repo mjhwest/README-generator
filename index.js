@@ -2,7 +2,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require("./utils/generateMarkdown.js");
-const renderLicenseBadge = require("./utils/generateMarkdown.js");
 //gets the stored variable /methds from generateMarkdown due to module.export in its file 
 
 //Create an array of questions for user input
@@ -62,16 +61,21 @@ const promptUser = () => {
 };
 
 
+// const init = () => {
+//         promptUser()
+
+// .then((data) => {
+//     fs.writeFileSync('README.md', generateMarkdown(data), (err) => {
+//         if (err) {
+//             console.log(err)
+//         }
+//     })
+// })
+
 const init = () => {
     promptUser()
-
-    .then((data) => {
-        fs.writeFileSync('README.md', generateMarkdown(data))
-
-    })
-
-    // fs.writeFileSync('README.md', generateMarkdown(data)))
-    .then(() => console.log("Nice job, you successfully wrote the README.md"))
+        .then((data) => fs.writeFileSync('README.md', generateMarkdown(data)))
+        .then(() => console.log("Nice job, you successfully wrote the README.md"))
         .catch((err) => console.error(err))
 };
 
@@ -80,13 +84,6 @@ const init = () => {
 //     err ? console.error(err) : console.log("Success! You made your ReadMe")
 // );
 
-
-
-//Line 65 to end of mini project:
-// TODO: Create a function to initialize app
-// function init(writeFileSync) {
-//     fs.writeToFile()
-// }
 
 // Function call to initialize app
 init();

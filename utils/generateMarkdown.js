@@ -14,7 +14,7 @@ function renderLicenseBadge(license) {
     }
 
 }
-// renderLicenseBadge()
+renderLicenseBadge()
 
 
 //Create a function that returns the license link
@@ -38,13 +38,14 @@ renderLicenseLink()
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {
+// function renderLicenseSection(license) {
 
 
-}
-renderLicenseSection()
+// }
+// renderLicenseSection()
 
-
+//put this under data.title and above tables of contents.
+// ${renderLicenseBadge(data.license)}
 
 
 //Create a function to generate markdown for README
@@ -81,13 +82,12 @@ function generateMarkdown(data) {
     If you have any questions please contact me either (https://github.com/${data.git}) or via email at ${data.email} 
 
     ## License 
-    This application is covered under ${data.license} 
+    This application is covered under ${renderLicenseLink(data.license)} 
     
-    Have a great day! `
+    Have a great day!`
 
-    renderLicenseBadge(data.license)
 }
 
 
 //module.export is an object we use to store variables or a method. 
-module.exports = generateMarkdown, renderLicenseBadge;
+module.exports = generateMarkdown;

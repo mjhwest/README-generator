@@ -1,6 +1,6 @@
-# d
+# Readme Generator
 
-    ![license: Apache License 2.0](https://img.shields.io/badge/license-Apache%20License%202.0-green)
+    undefined
 
     ## Table of Contents 
     - [Description](#Description)
@@ -12,24 +12,24 @@
     - [License](#License)
     
     ## Description
-    g
+    create readme that runs in command line
     
     ## Installation
-    h
+    node js
     
     ## Usage 
-    jh
+    follow prompts
         
     ## Contributions
-    b
+    no
     
     ## Test 
-    f
+    no
     
     ## Questions 
-    If you have any questions please contact me either (https://github.com/f) or via email at d 
+    If you have any questions please contact me either (https://github.com/mjhwest) or via email at mjhwest89@gmail.com 
 
     ## License 
-    This application is covered under Apache License 2.0 
+    This application is covered under undefined 
     
-    Have a great day! 
+    Have a great day!
