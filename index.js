@@ -2,6 +2,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require("./utils/generateMarkdown.js");
+const renderLicenseBadge = require("./utils/generateMarkdown.js");
 //gets the stored variable /methds from generateMarkdown due to module.export in its file 
 
 //Create an array of questions for user input
@@ -45,7 +46,6 @@ const promptUser = () => {
                 "Apache License 2.0",
                 "GNU General Public License v3.0",
                 "MIT License",
-
             ]
         },
         {
@@ -58,15 +58,20 @@ const promptUser = () => {
             name: "git",
             message: "Please provide your GitHub Profile URL"
         },
-    ]);
+    ])
 };
 
 
 const init = () => {
     promptUser()
 
-    .then((data) => fs.writeFileSync('README.md', generateMarkdown(data)))
-        .then(() => console.log("Nice job, you successfully write the readme.md"))
+    .then((data) => {
+        fs.writeFileSync('README.md', generateMarkdown(data))
+
+    })
+
+    // fs.writeFileSync('README.md', generateMarkdown(data)))
+    .then(() => console.log("Nice job, you successfully wrote the README.md"))
         .catch((err) => console.error(err))
 };
 

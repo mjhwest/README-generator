@@ -1,5 +1,4 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// TODO: Create a function that returns a license badge based on which license is passed in If there is no license, return an empty string
 function renderLicenseBadge(license) {
     if (license == 'None') {
         return '';
@@ -15,19 +14,10 @@ function renderLicenseBadge(license) {
     }
 
 }
-renderLicenseBadge()
+// renderLicenseBadge()
 
 
-// function renderLicenseBadge(license) {
-//     if (license !== 'None') {
-//       return `![GitHub license](https://img.shields.io/badge/license-${license}-blue.svg)`;
-//     }
-//     return '';
-//   }
-
-
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+//Create a function that returns the license link
 function renderLicenseLink(license) {
     if (license == 'None') {
         return '';
@@ -56,27 +46,12 @@ renderLicenseSection()
 
 
 
-// so it has the function . . if . . and return . .  or return . . .
-//LICENSE HERE// //Need to includge badge here//
-
-// let licensePick = "";
-
-// if (data.license = "Apache License 2.0") {
-//     licensePick = "![LICENSE](https://img.shields.io/badge/LICENSE-Apache%20License%202.0-green)";
-// } else if (data.license = "GNU General Public License v3.0") {
-//     licensePick = "![LICENSE: GNU General Public License v3.0](https://img.shields.io/badge/LICENSE-GNU%20General%20Public%20License%20v3.0-red)"
-// } else {
-//     licensePick = "![LICENSE: MIT](https://img.shields.io/badge/LICENSE-MIT-blue)"
-// };
-
-
 
 //Create a function to generate markdown for README
 function generateMarkdown(data) {
-    return `
-    
-    # ${data.title}
+    return `# ${data.title}
 
+    ${renderLicenseBadge(data.license)}
 
     ## Table of Contents 
     - [Description](#Description)
@@ -109,6 +84,10 @@ function generateMarkdown(data) {
     This application is covered under ${data.license} 
     
     Have a great day! `
+
+    renderLicenseBadge(data.license)
 }
+
+
 //module.export is an object we use to store variables or a method. 
-module.exports = generateMarkdown;
+module.exports = generateMarkdown, renderLicenseBadge;
