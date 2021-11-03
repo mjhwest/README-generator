@@ -102,7 +102,7 @@ const promptUser = () => {
 const init = () => {
     promptUser()
 
-    .then((data) => fs.writeFileSync('readme.md', generateMarkdown(data)))
+    .then((data) => fs.writeFileSync('README.md', generateMarkdown(data)))
         .then(() => console.log("Nice job, you successfully write the readme.md"))
         .catch((err) => console.error(err))
 };
