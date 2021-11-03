@@ -12,9 +12,40 @@ function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-    return `# ${data.title}
+    return `# < ${data.title} >
 
-`;
+    ## Table of Contents 
+    - [Description](#Description)
+    - [Installation](#Installation)
+    - [Usage](#Usage)
+    - [Contributions](#Contributions)
+    - [Tests](#Tests)
+    - [Questions](#Questions)
+    - [License](#License)
+    
+    ### Description
+    ${data.description}
+    
+    ### Installation
+    ${data.install}
+    
+    ### Usage 
+    ${data.usage}
+    
+    ### License
+    ${data.license}
+    
+    ### Contrubutions
+    ${data.contributions}
+    
+    ### Test 
+    ${data.test}
+    
+    ### Questions 
+    
+    If you have any questions please contact me either (https://github.com/${data.git}) or via email at ${data.email} 
+    
+    Have a great day! `
 }
 //module.export is an object we use to store variables or a method. 
 module.exports = generateMarkdown;

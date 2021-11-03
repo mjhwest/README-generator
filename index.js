@@ -1,13 +1,10 @@
 //Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-
+const generateMarkdown = require("./utils/generateMarkdown.js");
 //gets the stored variable /methds from generateMarkdown due to module.export in its file 
-// const generateMarkdown = require("./utils/generateMarkdown.js");
-
 
 //Create an array of questions for user input
-
 const promptUser = () => {
 
     return inquirer.prompt([{
@@ -64,48 +61,48 @@ const promptUser = () => {
 };
 
 
-const generateMarkdown = ({ title, description, install, usage, license, contributions, test, email, git }) =>
+// const generateMarkdown = ({ title, description, install, usage, license, contributions, test, email, git }) =>
 
-    `# < ${title} >
+// `# < ${title} >
 
-## Table of Contents 
-- [Description](#Description)
-- [Installation](#Installation)
-- [Usage](#Usage)
-- [Contributions](#Contributions)
-- [Tests](#Tests)
-- [Questions](#Questions)
-- [License](#License)
+// ## Table of Contents 
+// - [Description](#Description)
+// - [Installation](#Installation)
+// - [Usage](#Usage)
+// - [Contributions](#Contributions)
+// - [Tests](#Tests)
+// - [Questions](#Questions)
+// - [License](#License)
 
-### Description
-${description}
+// ### Description
+// ${description}
 
-### Installation
-${install}
+// ### Installation
+// ${install}
 
-### Usage 
-${usage}
+// ### Usage 
+// ${usage}
 
-### License
-${license}
+// ### License
+// ${license}
 
-### Contrubutions
-${contributions}
+// ### Contrubutions
+// ${contributions}
 
-### Test 
-${test}
+// ### Test 
+// ${test}
 
-### Questions 
+// ### Questions 
 
-If you have any questions please contact me either (https://github.com/${git}) or via email at ${email} 
+// If you have any questions please contact me either (https://github.com/${git}) or via email at ${email} 
 
-Have a great day! `;
+// Have a great day! `;
 
 
 const init = () => {
     promptUser()
 
-    .then((answers) => fs.writeFileSync('readme.md', generateMarkdown(answers)))
+    .then((data) => fs.writeFileSync('readme.md', generateMarkdown(data)))
         .then(() => console.log("Nice job, you successfully write the readme.md"))
         .catch((err) => console.error(err))
 };
