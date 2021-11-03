@@ -108,7 +108,7 @@ const init = () => {
 };
 
 // TODO: Create a function to write README file
-// fs.writeToFile('readme.md', data, (err) =>
+// fs.writeToFile('readme.md', generateMarkdown, (err) =>
 //     err ? console.error(err) : console.log("Success! You made your ReadMe")
 // );
 
