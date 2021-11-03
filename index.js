@@ -60,29 +60,30 @@ const promptUser = () => {
     ])
 };
 
+//ATTEMPT 1 method
+// const init = (data) => {
+//     promptUser(data)
 
-// const init = () => {
-//         promptUser()
-
-// .then((data) => {
-//     fs.writeFileSync('README.md', generateMarkdown(data), (err) => {
-//         if (err) {
-//             console.log(err)
-//         }
+//     .then((data) => {
+//         fs.writeFileSync('README.md', generateMarkdown(data), (err) => {
+//             if (err) {
+//                 console.log(err)
+//             }
+//         })
 //     })
-// })
+// }
 
+//ATTEMPT 2 METHOD
+//try changing writeToFileSync to writeFile 
+//try changing .then((answers) to ((data) same for end of line 81
 const init = () => {
     promptUser()
-        .then((data) => fs.writeFileSync('README.md', generateMarkdown(data)))
+        // .then((data) => fs.writeFile('README.md', generateMarkdown(data))) --does not work
+        .then((answers) => fs.writeFileSync('README.md', generateMarkdown(answers)))
         .then(() => console.log("Nice job, you successfully wrote the README.md"))
         .catch((err) => console.error(err))
 };
 
-// TODO: Create a function to write README file
-// fs.writeToFile('readme.md', generateMarkdown, (err) =>
-//     err ? console.error(err) : console.log("Success! You made your ReadMe")
-// );
 
 
 // Function call to initialize app
