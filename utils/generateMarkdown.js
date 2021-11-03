@@ -82,26 +82,26 @@ function generateMarkdown(data) {
     - [Questions](#Questions)
     - [License](#License)
     
-    ### Description
+    ## Description
     ${data.description}
     
-    ### Installation
+    ## Installation
     ${data.installation}
     
-    ### Usage 
+    ## Usage 
     ${data.usage}
         
-    ### Contributions
+    ## Contributions
     ${data.contributions}
     
-    ### Test 
+    ## Test 
     ${data.test}
     
-    ### Questions 
-    
+    ## Questions 
+
     If you have any questions please contact me either (https://github.com/${data.git}) or via email at ${data.email} 
 
-    ### License 
+    ## License 
     This application is covered under ${data.license} 
     
     Have a great day! `

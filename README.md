@@ -1,6 +1,6 @@
 
     
-    # Test1
+    # Read Me Generator 
 
 
 
@@ -14,26 +14,26 @@
     - [Questions](#Questions)
     - [License](#License)
     
-    ### Description
-    Test2
+    ## Description
+    to build a readme generator that can be filled out in the command line 
     
-    ### Installation
-    Test3
+    ## Installation
+    node.js
     
-    ### Usage 
-    Test4
+    ## Usage 
+    Follow the prompts 
         
-    ### Contributions
-    Test5
+    ## Contributions
+    No 
     
-    ### Test 
-    Test6
+    ## Test 
+    No 
     
-    ### Questions 
-    
-    If you have any questions please contact me either (https://github.com/westy/git) or via email at mjhwest89@gmail.com 
+    ## Questions 
 
-    ### License 
+    If you have any questions please contact me either (https://github.com/mjhwest) or via email at mjhwest89@gmail.com 
+
+    ## License 
     This application is covered under GNU General Public License v3.0 
     
     Have a great day! 
