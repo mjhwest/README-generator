@@ -4,7 +4,8 @@
 ![Demo](assets/Demo.gif)
 
 ## Description
-This project was about creating a read me file generate that would operate using command line application. This was important to do as it was our first time using node and understnainf how it works. 
+This project was about creating a read me file generate that would operate using command line application. This was important to do as it was our first time using node and understnainf how it works.
+
 A link to the demo of how the project works can be found here : 
 (https://watch.screencastify.com/v/TxmaBPOaoHnMwBHHNsqN)
 
@@ -40,6 +41,7 @@ The new file will then be created and have the information the user entered disp
 
 ## License 
 MIT License 
+
 Copyright (c) Michael West
 
 ## Features
