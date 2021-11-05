@@ -1,34 +1,43 @@
-# Professional Readme Generator
+# Read Me Generator
 
-![license: GNU General Public License v3.0](https://img.shields.io/badge/license-GNU%20General%20Public%20License%20v3.0-red)
+![Demo](assets/Demo.gif)
 
-## Table of Contents 
-- [Description](#Description)
-- [Installation](#Installation)
-- [Usage](#Usage)
-- [Contributions](#Contributions)
-- [Tests](#Tests)
-- [Questions](#Questions)
-- [License](#License)
-    
 ## Description
-To easily create a new readme file that is generated when a user answers prompted questions in their command-line application. 
-    
-## Installation
-For the readmee file to be generated the user must have node.js on their terminal as well as the inquirer package. To install node.js you can go to this link (https://nodejs.org/en/download/). To install the inqueier package, the user can open the command line and type 'npm init -y' and then 'npm install inquirer' to install the inquirer package. 
-    
-## Usage 
-The user must open the terminal on their computer and type 'node index.js' and follow the prompts.
-        
-## Contributions
-If you would like to contribute please email me. 
-    
-## Tests
-To test run 'npm run test' in terminal command line
-    
-## Questions 
-If you have any questions please contact me either (https://github.com/mjhwest) or via email at mjhwest89@gmail.com 
+This project was about creating a read me file generate that would operate using command line application. This was important to do as it was our first time using node and understnainf how it works. 
+A link to the demo of how the project works can be found here : 
+(https://watch.screencastify.com/v/TxmaBPOaoHnMwBHHNsqN)
 
-## License 
-This application is covered under [GNU General Public License v3.0](https://opensource.org/licenses/GPL-2.0) 
-    
+To view the code and see how it was created view my GitHUb here: 
+(https://github.com/mjhwest/README-generator)
+
+
+## Installation
+For the application to sucessful work you must have node.js installed on your computer. 
+This can be done by following the link here [download node](https://nodejs.org/en/download/). 
+Once node is installed, the next step is to installed inquierer. This is done by opening the terminal and in the command line typing in 'npm init -y' and letting it download. Then in the command line again typing 'npm install inquirer'. 
+This will allow the inqurier function to successfully work, i.e. allowing you to answer the questions. 
+
+## Usage
+The user opens the command terminal by right clicking and selecting 'Open Integrated Terminal' 
+
+![open](assets/open.png)
+
+Assuming all installation is done, and the user has Node.Js installed as well as the inquirer package. 
+
+Once in the terminal, type 'node index.js' and hit enter. 
+![terminal](assets/terminal.png)
+
+The user will then be presented with a question, which they answer, then another question. The process continues until all questions have been answered. 
+Once all questions are answered, the user is presented with a message. In this instance 'Nice job...."
+
+![questions](assets/questions.png)
+
+The new file will then be created and have the information the user entered displayed in it. 
+
+![finished](assets/finished.png)
+
+
+
+## Features
+Node JS <br>
+Inquirer 
