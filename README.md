@@ -39,8 +39,8 @@ The new file will then be created and have the information the user entered disp
 
 
 ## License 
-The project is released under the [MIT License](https://opensource.org/licenses/MIT) <br>
-Copyright (c) 2021 Michael West
+MIT License 
+Copyright (c) Michael West
 
 ## Features
 Node JS <br>
