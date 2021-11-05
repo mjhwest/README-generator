@@ -30,7 +30,7 @@ const promptUser = () => {
         {
             type: "input",
             name: "contributions",
-            message: "Are there any contribution guideliness that need to be followed? Consider people who contributed and links to tutorial vidoes."
+            message: "Are there any contribution guideliness that need to be followed?"
         },
         {
             type: "input",
