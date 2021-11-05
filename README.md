@@ -1,5 +1,6 @@
 # Read Me Generator
 
+
 ![Demo](assets/Demo.gif)
 
 ## Description
@@ -37,6 +38,9 @@ The new file will then be created and have the information the user entered disp
 ![finished](assets/finished.png)
 
 
+## License 
+The project is released under the [MIT License](https://opensource.org/licenses/MIT) <br>
+Copyright (c) 2021 Michael West
 
 ## Features
 Node JS <br>
