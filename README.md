@@ -1,4 +1,4 @@
-# ReadMe Generator 
+# ReadMe Generator
 
 ![license: MIT](https://img.shields.io/badge/license-MIT-blue)
 
@@ -12,19 +12,19 @@
 - [License](#License)
     
 ## Description
-To build a readme generator that operates from the command line. The readme should include  a title, description and relevant information about installation, usage, contributions, tests, license as well as how to contact the creator 
+To create a readme generator that runs in the users terminal command line 
     
 ## Installation
-The user must have node.js installed on their computer as well as npm inquerier and other relevant dependicies
+To have node.js installed as well as the inquirer package 
     
 ## Usage 
-The user must open the terminal, type; node index.js and follow the prompts
+open the terminal and type node index.js then follow the prompts 
         
 ## Contributions
-No
+This was a solo project 
     
 ## Tests
-The user needs to follow the prompts and the README.md will be generated 
+No
     
 ## Questions 
 If you have any questions please contact me either (https://github.com/mjhwest) or via email at mjhwest89@gmail.com 
@@ -32,4 +32,3 @@ If you have any questions please contact me either (https://github.com/mjhwest) 
 ## License 
 This application is covered under [MIT License](https://opensource.org/licenses/MIT) 
     
-Have a great day!

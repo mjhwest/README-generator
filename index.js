@@ -15,7 +15,7 @@ const promptUser = () => {
         {
             type: 'input',
             name: 'description',
-            message: "Provide a description explaining your project"
+            message: "Provide a description explaining your project."
         },
         {
             type: 'input',
@@ -30,7 +30,7 @@ const promptUser = () => {
         {
             type: "input",
             name: "contributions",
-            message: "Are there any contribution guideliness that need to be followed?"
+            message: "Are there any contribution guideliness that need to be followed? Consider people who contributed and links to tutorial vidoes."
         },
         {
             type: "input",
@@ -40,42 +40,27 @@ const promptUser = () => {
         {
             type: "list",
             name: "license",
-            message: 'Please select the licensing required for this application',
+            message: 'Please select the licensing required for this application.',
             choices: [
                 "Apache License 2.0",
                 "GNU General Public License v3.0",
                 "MIT License",
+                "None Required"
             ]
         },
         {
             type: "input",
             name: "email",
-            message: "Please enter your email"
+            message: "Please enter your email."
         },
         {
             type: "input",
             name: "git",
-            message: "Please provide your GitHub Profile URL"
+            message: "Please provide your GitHub Profile username."
         },
     ])
 };
 
-//ATTEMPT 1 method
-// const init = (data) => {
-//     promptUser(data)
-
-//     .then((data) => {
-//         fs.writeFileSync('README.md', generateMarkdown(data), (err) => {
-//             if (err) {
-//                 console.log(err)
-//             }
-//         })
-//     })
-// }
-
-//ATTEMPT 2 METHOD
-//try changing writeToFileSync to writeFile 
-//try changing .then((answers) to ((data) same for end of line 81
 const init = () => {
     promptUser()
         // .then((data) => fs.writeFile('README.md', generateMarkdown(data))) --does not work
